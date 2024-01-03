@@ -9,6 +9,8 @@ import {
   GraduationCap,
   Briefcase,
 } from 'lucide-react';
+import { CardCv } from './ui/CardCv';
+import { DevImg } from './DevImg';
 
 const infoData = [
   {
@@ -104,14 +106,20 @@ const About = () => {
 
   return (
     <section className='xl:h-[860px] pb-12 xl:py-24'>
-      <div className='max-w-2xl mx-auto '>
+      <div className='container mx-auto'>
         <h2 className='section-title mb-8 xl:mb-16 text-center mx-auto'>
           Acerca de mi
         </h2>
         <div className='flex flex-col xl:flex-row'>
           {/* image */}
-        
-       
+
+          <div className='hidden xl:flex flex-1 relative'>
+              <DevImg
+                styles='bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom '
+                img='/hero/avatar.png'
+              />
+            
+          </div>
        
           <div className='flex-1'>
             <Tabs defaultValue='personal'>

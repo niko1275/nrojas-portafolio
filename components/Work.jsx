@@ -21,7 +21,7 @@ const projectData = [
     category: 'react js',
     name: 'Uptask',
     description:
-      'Pagina para la administracion de proyectos',
+      'Pagina para la administracion de proyectos y tareas',
     link: 'https://mernstask-frontend.vercel.app',
     github: '/',
   },
@@ -30,7 +30,7 @@ const projectData = [
     category: 'react js',
     name: 'Social App',
     description:
-      'Pagina creada para compartir fotos y comentarlas .',
+      'Pagina para poder compartir fotos y comentarlas y reaccionar .',
     link: 'https://social-app-frontend-xi.vercel.app',
     github: '/',
   },
