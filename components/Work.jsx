@@ -23,7 +23,7 @@ const projectData = [
     description:
       'Pagina para la administracion de proyectos y tareas',
     link: 'https://mernstask-frontend.vercel.app',
-    github: '/',
+    github: 'https://github.com/niko1275',
   },
   {
     image: '/work/socialapp.png',
@@ -32,7 +32,7 @@ const projectData = [
     description:
       'Pagina para poder compartir fotos y comentarlas y reaccionar .',
     link: 'https://social-app-frontend-xi.vercel.app',
-    github: '/',
+    github: 'https://github.com/niko1275',
   },
   {
     image: '/work/2.png',
@@ -95,7 +95,7 @@ const projectData = [
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
     link: '/',
-    github: '/',
+    github: 'https://github.com/niko1275',
   },
 ];
 
@@ -107,10 +107,10 @@ const Work = () => {
         <div className='max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start'>
           <h2 className='section-title mb-4'>Ultimos proyectos</h2>
           <p className='subtitle mb-8'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Visita o revisa mis ultimos proyectos
           </p>
           <Link href='/projects'>
-            <Button>All projects</Button>
+            <Button>Todos los proyectos</Button>
           </Link>
         </div>
         {/* slider */}
@@ -128,7 +128,7 @@ const Work = () => {
             pagination={{ clickable: true }}
           >
             {/* show only the first 4 projects for the slides */}
-            {projectData.slice(0, 4).map((project, index) => {
+            {projectData.slice(0, 3).map((project, index) => {
               return (
                 <SwiperSlide key={index}>
                   <ProjectCard project={project} />

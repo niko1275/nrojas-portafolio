@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { CardCv } from './ui/CardCv';
 import { DevImg } from './DevImg';
+import { CardUser } from './ui/CardUser';
 
 const infoData = [
   {
@@ -35,7 +36,7 @@ const infoData = [
 
 const qualificationData = [
   {
-    title: 'education',
+    title: 'Eduación',
     data: [
       {
         university: 'Inacap Santiago sur',
@@ -51,7 +52,7 @@ const qualificationData = [
     ],
   },
   {
-    title: 'experience',
+    title: 'Experiencia',
     data: [
       {
         company: 'Entel',
@@ -114,10 +115,13 @@ const About = () => {
           {/* image */}
 
           <div className='hidden xl:flex flex-1 relative'>
-              <DevImg
+            
+              <CardUser/>
+           
+              {/* <DevImg
                 styles='bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom '
                 img='/hero/avatar.png'
-              />
+              /> */}
             
           </div>
        
@@ -176,12 +180,12 @@ const About = () => {
                         <div className='flex gap-x-4 items-center text-[22px] text-primary'>
                           <Briefcase />
                           <h4 className='capitalize font-medium'>
-                            {getData(qualificationData, 'experience').title}
+                            {getData(qualificationData, 'Experiencia').title}
                           </h4>
                         </div>
                         {/* list */}
                         <div className='flex flex-col gap-y-8'>
-                          {getData(qualificationData, 'experience').data.map(
+                          {getData(qualificationData, 'Experiencia').data.map(
                             (item, index) => {
                               const { company, role, years } = item;
                               return (
@@ -211,12 +215,12 @@ const About = () => {
                         <div className='flex gap-x-4 items-center text-[22px] text-primary'>
                           <GraduationCap size={28} />
                           <h4 className='capitalize font-medium'>
-                            {getData(qualificationData, 'education').title}
+                            {getData(qualificationData, 'Eduación').title}
                           </h4>
                         </div>
                         {/* list */}
                         <div className='flex flex-col gap-y-8'>
-                          {getData(qualificationData, 'education').data.map(
+                          {getData(qualificationData, 'Eduación').data.map(
                             (item, index) => {
                               const { university, qualification, years } = item;
                               return (
