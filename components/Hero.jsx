@@ -26,14 +26,14 @@ const Hero = () => {
     <section className='py-12 xl:py-24 h-[84vh] xl:pt-30 bg-hero_bg bg-bottom bg-cover dark:bg-none'>
       <div className='container mx-auto'>
         <div className='flex justify-between  gap-x-8'>
-          <div className='grid grid-cols-1 md:grid-cols-2'>
+          
 
           <div className='flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left'>
             <div className='text-2xl uppercase font-semibold mb-4 tracking-[4px]'>
               Desarrollador web
             </div>
-            <h1 className='h1 mb-4 text-9xlxl '>Hola, Soy Nicolas Rojas</h1>
-            <p className='text-xl max-w-[490px]  mx-auto xl:mx-0 font-bold mt-2'>
+            <h1 className='h1 text-2xl mb-4 md:text-7xl  '>Hola, Soy Nicolas Rojas</h1>
+            <p className='text-xs md:text-2xl max-w-[490px]   mx-auto xl:mx-0 font-bold mt-2'>
             ¡Bienvenido a mi Portafolio Digital!
             Aquí, en este rincón virtual, tienes la oportunidad de sumergirte en mi mundo creativo y 
             descubrir más sobre mi trayectoria, habilidades y pasión por la programación.
@@ -60,11 +60,11 @@ const Hero = () => {
            
           </div>
 
-          <div className='flex justify-center mx-auto xl:flex md:mr-10  mt-10  '>
+          <div className='hidden flex justify-center mx-auto xl:flex md:mr-10  mt-10  '>
               
             <CardCv/>
           </div>
-        </div> 
+        
           
         
         </div>
