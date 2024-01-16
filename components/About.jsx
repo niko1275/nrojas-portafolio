@@ -1,5 +1,5 @@
 
-import Image from 'next/image';
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 import {
@@ -9,8 +9,7 @@ import {
   GraduationCap,
   Briefcase,
 } from 'lucide-react';
-import { CardCv } from './ui/CardCv';
-import { DevImg } from './DevImg';
+
 import { CardUser } from './ui/CardUser';
 
 const infoData = [

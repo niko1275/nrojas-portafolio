@@ -9,9 +9,7 @@ import {
   RiTodoFill,
   RiArrowDownSLine,
 } from 'react-icons/ri';
-import Badge from './Badge';
-import Socials from './Socials';
-import { DevImg } from './DevImg';
+
 import { CardCv } from './ui/CardCv';
 import { CardUser } from './ui/CardUser';
 import { Github } from './ui/Github';
