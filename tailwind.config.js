@@ -77,6 +77,7 @@ module.exports = {
         hero2: 'url(/hero/hero.png)',
         dots: 'url(/dot.svg)',
         dots_light: 'url(/dots-light.svg)',
+        wave: 'url(/wave.svg)',
       }
       
     },
