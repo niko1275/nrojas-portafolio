@@ -17,7 +17,7 @@ const projectData = [
     category: 'react js',
     name: 'Uptask',
     description:
-      'Pagina para la administracion de proyectos y tareas',
+      'Pagina para la administracion de proyectos y tareas de los proyectos. Creada con ReactJS, Express Y MongoDB',
     link: 'https://mernstask-frontend.vercel.app',
     github: 'https://github.com/niko1275',
   },
@@ -26,7 +26,7 @@ const projectData = [
     category: 'react js',
     name: 'Social App',
     description:
-      'Pagina para poder compartir fotos y comentarlas y reaccionar .',
+      'Pagina para poder compartir fotos y comentarlas y reaccionar. Creada Con ReactJS, Express y MongoDB ',
     link: 'https://social-app-frontend-xi.vercel.app',
     github: 'https://github.com/niko1275',
   },
@@ -110,9 +110,9 @@ const Work = () => {
           </Link>
         </div>
         {/* slider */}
-        <div className='xl:max-w-[1000px] xl:absolute right-0 top-0'>
+        <div className='xl:max-w-[1000px] xl:absolute right-0 top-0 '>
           <Swiper
-            className='h-[480px]'
+            className='h-[480px '
             slidesPerView={1}
             breakpoints={{
               640: {
@@ -126,7 +126,7 @@ const Work = () => {
             {/* show only the first 4 projects for the slides */}
             {projectData.slice(0, 3).map((project, index) => {
               return (
-                <SwiperSlide key={index}>
+                <SwiperSlide key={index} className=''>
                   <ProjectCard project={project} />
                 </SwiperSlide>
               );
