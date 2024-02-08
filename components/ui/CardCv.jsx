@@ -2,7 +2,7 @@ import MyCv from '@/hooks/MyCv'
 import React from 'react'
 
 export const CardCv = () => {
-  const cvFileName = 'Nicolas_CV.pdf';
+  const cvFileName = 'NRojasCV.pdf';
   const cvFilePath = `/assets/${cvFileName}`;
 
   const handleDownloadCV = () => {

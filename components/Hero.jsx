@@ -45,7 +45,7 @@ const fadeIn = (direction, delay) => {
 
 
 const Hero = () => {
-  const cvFileName = 'Nicolas_CV.pdf';
+  const cvFileName = 'NRojasCV.pdf';
   const cvFilePath = `/assets/${cvFileName}`;
 
   const handleDownloadCV = () => {
@@ -89,8 +89,12 @@ const Hero = () => {
                 descubrir más sobre mi trayectoria, habilidades y pasión por la programación.
               </p>
               <div className='flex  justify-center  gap-2 mt-10  md:flex-row md:items-center'>
-                <Github />
+                <Link href={'https://github.com/niko1275'}>
+                  <Github />
+                </Link>
+                <Link href={'https://www.linkedin.com/in/nicolas-ignacio-rojas-huanquitripay-2a647b284/'}>
                 <Linkedin />
+                </Link>
               </div>
             </motion.div>
             <button onClick={handleDownloadCV} class="xl:hidden mx-auto rounded-full p-3 text-white font-bold bg-red-600 dark:bg-primary hover:shadow-lime-200 mt-8 flex justify-center">
