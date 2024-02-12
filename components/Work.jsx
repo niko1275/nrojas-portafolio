@@ -31,13 +31,13 @@ const projectData = [
     github: 'https://github.com/niko1275',
   },
   {
-    image: '/work/2.png',
-    category: 'next js',
-    name: 'Lumina Website',
+    image: '/work/750shots_so.png',
+    category: 'Next JS',
+    name: 'Admin Dashboard',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.',
-    link: '/',
-    github: '/',
+      'Dashboard Para la administracion de un sistema web, creado con Next JS, Prisma, Server Actions, Authjs, S3.',
+    link: 'https://dashboard-e.vercel.app/dashboard',
+    github: 'https://github.com/niko1275/dashboard-e',
   },
   {
     image: '/work/1.png',

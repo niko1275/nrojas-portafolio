@@ -5,20 +5,28 @@ import ProjectCard from '@/components/ProjectCard';
 
 const projectData = [
     {
+      image:'/work/750shots_so.png',
+      category:'Next JS',
+      name:'Admin Dashboard',
+      description:'Dashboard Para la administracion de un sistema web, creado con Next JS, Prisma, Server Actions, Authjs, S3.',
+      link:'https://dashboard-e.vercel.app/dashboard',
+      github:'https://github.com/niko1275/dashboard-e',
+    },
+    {
         image: '/work/uptaks.png',
-        category: 'react js',
+        category: 'React JS',
         name: 'Uptask',
         description:
-          'Pagina para la administracion de proyectos y tareas Creada con ReactJS, Express y MongoDB',
+          'Pagina para la administracion de proyectos y tareas Creada con ReactJS, TailwindCSS, Express y MongoDB',
         link: 'https://mernstask-frontend.vercel.app',
         github: 'https://github.com/niko1275',
       },
       {
         image: '/work/socialapp.png',
-        category: 'react js',
+        category: 'React JS',
         name: 'Social App',
         description:
-          'Pagina para poder compartir fotos y comentarlas y reaccionar Creada Con ReactJS, Express y MongoDB',
+          'Pagina para poder compartir fotos y comentarlas y reaccionar Creada Con ReactJS,TailwindCSS,Express y MongoDB',
         link: 'https://social-app-frontend-xi.vercel.app',
         github: 'https://github.com/niko1275',
       },
