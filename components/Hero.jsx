@@ -107,7 +107,7 @@ const Hero = () => {
             </button>
           </div>
           <motion.div
-            className='hidden justify-end items-end xl:flex mt-10 absolute bottom-0 -right-[200px]'
+            className='hidden justify-end items-end xl:flex mt-10 absolute bottom-0 -right-[50px]'
             variants={fadeIn('up', 0)}
             initial='hidden'
             animate='show'
