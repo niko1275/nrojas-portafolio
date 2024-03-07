@@ -60,12 +60,12 @@ const Hero = () => {
       <div className='container mx-auto h-full'>
         <div className='flex justify-between gap-x-8 h-full relative'>
           <div className='flex max-w-[600px] h-full flex-col justify-between items-center mx-auto xl:mx-0 text-center xl:text-left py-10'>
-            <motion.div
+         {/*    <motion.div
               variants={fadeIn('right', 0)}
               initial='hidden'
               animate='show'
               exit='hidden'
-            >
+            > */}
               <div
                 className='text-2xl uppercase font-semibold mb-4 tracking-[4px] h-8'
               >
@@ -76,13 +76,13 @@ const Hero = () => {
                 }} />
               </div>
               <h1 className='h1 text-2xl mb-4 md:text-7xl  '>Hola, Soy Nicolas Rojas</h1>
-            </motion.div>
-            <motion.div
+            {/* </motion.div> */}
+            {/* <motion.div
               variants={fadeIn('up', 0)}
               initial='hidden'
               animate='show'
               exit='hidden'
-            >
+            > */}
               <p className='text-md md:text-2xl text-center mx-auto xl:mx-0 font-bold mt-2'>
                 ¡Bienvenido a mi Portafolio Digital!
                 Aquí, en este rincón virtual, tienes la oportunidad de sumergirte en mi mundo creativo y
@@ -96,25 +96,25 @@ const Hero = () => {
                 <Linkedin />
                 </Link>
               </div>
-            </motion.div>
-            <button onClick={handleDownloadCV} class="xl:hidden mx-auto rounded-full p-3 text-white font-bold bg-red-600 dark:bg-primary hover:shadow-lime-200 mt-8 flex justify-center">
+            {/* </motion.div> */}
+            <button onClick={handleDownloadCV} className="xl:hidden mx-auto rounded-full p-3 text-white font-bold bg-red-600 dark:bg-primary hover:shadow-lime-200 mt-8 flex justify-center">
 
 
               Descargar CV
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ml-1">
+              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ml-1">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15M9 12l3 3m0 0 3-3m-3 3V2.25" />
               </svg>
             </button>
           </div>
-          <motion.div
+         {/*  <motion.div
             className='hidden justify-end items-end xl:flex mt-10 absolute bottom-0 -right-[50px]'
             variants={fadeIn('up', 0)}
             initial='hidden'
             animate='show'
             exit='hidden'
-          >
+          > */}
             <CardCv />
-          </motion.div>
+         {/*  </motion.div> */}
         </div>
         <div className='hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce'>
           <RiArrowDownSLine className='text-3xl text-primary' />
