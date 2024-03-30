@@ -113,7 +113,10 @@ const Hero = () => {
             animate='show'
             exit='hidden'
           > */}
-            <CardCv />
+          <div className='hidden justify-end items-end xl:flex mt-10 absolute bottom-0 -right-[50px]'>
+             <CardCv/>
+          </div>
+           
          {/*  </motion.div> */}
         </div>
         <div className='hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce'>
