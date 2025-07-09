@@ -13,12 +13,12 @@ import ProjectCard from '@/components/ProjectCard';
 
 const projectData = [
   {
-    image: '/work/uptaks.png',
-    category: 'react js',
-    name: 'Uptask',
+    image: '/work/QuiscoCoffe.png',
+    category: 'Next JS',
+    name: 'QuiscoCoffe',
     description:
-      'Pagina para la administracion de proyectos y tareas de los proyectos. Creada con ReactJS, Express Y MongoDB',
-    link: 'https://mernstask-frontend.vercel.app',
+      'Pagina Para la venta De productos de pasteleria, Con panel de administracion, Creado Con Next js, typescript, Auth JS, S3, Tailwind, MercadoPago.',
+    link: 'https://quisco-coffe.vercel.app',
     github: 'https://github.com/niko1275',
   },
   {
@@ -124,7 +124,7 @@ const Work = () => {
             pagination={{ clickable: true }}
           >
             {/* show only the first 4 projects for the slides */}
-            {projectData.slice(0, 3).map((project, index) => {
+            {projectData.slice(0, 4).map((project, index) => {
               return (
                 <SwiperSlide key={index} className=''>
                   <ProjectCard project={project} />

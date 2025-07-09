@@ -13,12 +13,12 @@ const projectData = [
       github:'https://github.com/niko1275/dashboard-e',
     },
     {
-        image: '/work/uptaks.png',
-        category: 'React JS',
-        name: 'Uptask',
+        image: '/work/QuiscoCoffe.png',
+        category: 'Next JS',
+        name: 'QuiscoCoffe',
         description:
-          'Pagina para la administracion de proyectos y tareas Creada con ReactJS, TailwindCSS, Express y MongoDB',
-        link: 'https://mernstask-frontend.vercel.app',
+          'Pagina Para la venta De productos de pasteleria, Con panel de administracion, Creado Con Next js, typescript, Auth JS, S3, Tailwind, MercadoPago.',
+        link: 'https://quisco-coffe.vercel.app',
         github: 'https://github.com/niko1275',
       },
       {
