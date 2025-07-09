@@ -8,6 +8,11 @@ import {
   PhoneCall,
   GraduationCap,
   Briefcase,
+  Code,
+  Globe,
+  Database,
+  Layers,
+  Award,
 } from 'lucide-react';
 
 import { CardUser } from './ui/CardUser';
@@ -68,15 +73,19 @@ const skillData = [
     data: [
       {
         name: 'HTML, CSS, Python, Django',
+        icon: <Code size={20} />,
       },
       {
         name: 'Javascript, Reactjs, Nodejs',
+        icon: <Globe size={20} />,
       },
       {
         name: 'Express,NextJs',
+        icon: <Layers size={20} />,
       },
       {
         name: 'SQL, NoSQL, MongoDB ',
+        icon: <Database size={20} />,
       },
     ],
   },
@@ -95,6 +104,22 @@ const skillData = [
       {
         imgPath: '/about/wordpress.svg',
       },
+    ],
+  },
+];
+
+const certificationData = [
+  {
+    title: 'Certificaciones',
+    data: [
+      {
+        name: 'AWS Certified Cloud Practitioner',
+        issuer: 'AWS',
+        year: '2025',
+        credential: '86ef2663f34d4bbfa2f5fb09a9fae486',
+        credentialUrl: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/86ef2663f34d4bbfa2f5fb09a9fae486',
+      },
+     
     ],
   },
 ];
@@ -126,7 +151,7 @@ const About = () => {
        
           <div className='flex-1'>
             <Tabs defaultValue='personal'>
-              <TabsList className='w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none'>
+              <TabsList className='w-full grid xl:grid-cols-4 xl:max-w-[680px] xl:border dark:border-none'>
                 <TabsTrigger className='w-[162px] xl:w-auto' value='personal'>
                   Personal Info
                 </TabsTrigger>
@@ -139,6 +164,9 @@ const About = () => {
                 <TabsTrigger className='w-[162px] xl:w-auto' value='skills'>
                   Skills
                 </TabsTrigger>
+                <TabsTrigger className='w-[162px] xl:w-auto' value='certifications'>
+                  Certificaciones
+                </TabsTrigger>
               </TabsList>
               {/* tabs content */}
               <div className='text-lg mt-12 xl:mt-8'>
@@ -147,7 +175,7 @@ const About = () => {
                   <div className='text-center xl:text-left'>
                    
                     <p className='subtitle max-w-xl mx-auto xl:mx-0'>
-                      Estudiante de analista programador, con un solido conocimiento teórico y habilidades
+                      Desarrollador Full Stack, con un solido conocimiento teórico y habilidades
                       prácticas en el desarrollo de software, estoy comprometido en expandir mis habilidades 
                       y conocimientos en el campo de las tecnologias.
                     </p>
@@ -253,19 +281,22 @@ const About = () => {
                     
                     {/* skills */}
                     <div className='mb-16'>
-                      <h4 className='text-xl font-semibold mb-2'>Skills</h4>
-                      <div className='border-b border-border mb-4'></div>
+                      <h4 className='text-xl font-semibold mb-4'>Skills</h4>
+                      <div className='border-b border-border mb-6'></div>
                       {/* skill list */}
-                      <div>
+                      <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                         {getData(skillData, 'skills').data.map(
                           (item, index) => {
-                            const { name } = item;
+                            const { name, icon } = item;
                             return (
                               <div
-                                className='w-2/4 text-center xl:text-left mx-auto xl:mx-0'
+                                className='bg-card border border-border rounded-lg p-4 hover:bg-accent/50 transition-colors duration-200'
                                 key={index}
                               >
-                                <div className='font-medium'>{name}</div>
+                                <div className='flex items-center gap-3 justify-center xl:justify-start'>
+                                  <div className='text-primary'>{icon}</div>
+                                  <div className='font-medium'>{name}</div>
+                                </div>
                               </div>
                             );
                           }
@@ -296,6 +327,56 @@ const About = () => {
                         })}
                       </div>
                     </div> */}
+                  </div>
+                </TabsContent>
+                {/* certifications */}
+                <TabsContent value='certifications'>
+                  <div className='text-center xl:text-left'>
+                    <h4 className='text-xl font-semibold mb-4'>Certificaciones Profesionales</h4>
+                    <div className='border-b border-border mb-6'></div>
+                    <div className='grid grid-cols-1 gap-4'>
+                      {getData(certificationData, 'Certificaciones').data.map(
+                        (item, index) => {
+                          const { name, issuer, year, credential, credentialUrl } = item;
+                          return (
+                            <div
+                              className='bg-card border border-border rounded-lg p-4 hover:bg-accent/50 transition-colors duration-200'
+                              key={index}
+                            >
+                              <div className='flex items-center gap-3 mb-2'>
+                                <div className='text-primary'>
+                                  <Award size={20} />
+                                </div>
+                                <div className='font-semibold text-lg'>{name}</div>
+                              </div>
+                              <div className='ml-8 space-y-1'>
+                                <div className='text-muted-foreground'>
+                                  <span className='font-medium'>Emisor:</span> {issuer}
+                                </div>
+                                <div className='text-muted-foreground'>
+                                  <span className='font-medium'>Año:</span> {year}
+                                </div>
+                                <div className='text-muted-foreground'>
+                                  <span className='font-medium'>Credencial:</span>{' '}
+                                  {credentialUrl ? (
+                                    <a
+                                      href={credentialUrl}
+                                      target='_blank'
+                                      rel='noopener noreferrer'
+                                      className='text-primary hover:underline transition-colors duration-200'
+                                    >
+                                      {credential}
+                                    </a>
+                                  ) : (
+                                    credential
+                                  )}
+                                </div>
+                              </div>
+                            </div>
+                          );
+                        }
+                      )}
+                    </div>
                   </div>
                 </TabsContent>
               </div>
