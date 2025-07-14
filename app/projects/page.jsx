@@ -4,6 +4,16 @@ import { Tabs, TabsList, TabsContent, TabsTrigger } from '@/components/ui/tabs';
 import ProjectCard from '@/components/ProjectCard';
 
 const projectData = [
+
+   {
+    image: '/work/ReelixAPP.png',
+    category: 'Next JS',
+    name: 'Reelix',
+    description:
+      'Pagina Clon de Youtube, Videos Maximo 10 segundos(plan free mux), Creada Con TRCP, Clerk, S3, Drizzle ORM, Mux, Next JS, Tailwind, Shadcn, AWS RDS Y S3.',
+    link: '/',
+    github: '/',
+  },
     {
       image:'/work/750shots_so.png',
       category:'Next JS',

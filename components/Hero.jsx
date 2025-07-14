@@ -14,7 +14,7 @@ import { CardCv } from './ui/CardCv';
 import { Github } from './ui/Github';
 import { Linkedin } from './ui/Linkedin';
 import Typewriter from 'typewriter-effect';
-import { motion } from 'framer-motion';
+
 
 const fadeIn = (direction, delay) => {
   return {
@@ -45,7 +45,7 @@ const fadeIn = (direction, delay) => {
 
 
 const Hero = () => {
-  const cvFileName = 'NRojasCV.pdf';
+  const cvFileName = 'Nicolas_Ignacio_Rojas_Huanquitripay_-_.pdf';
   const cvFilePath = `/assets/${cvFileName}`;
 
   const handleDownloadCV = () => {
