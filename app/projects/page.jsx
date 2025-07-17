@@ -11,7 +11,7 @@ const projectData = [
     name: 'Reelix',
     description:
       'Pagina Clon de Youtube, Videos Maximo 10 segundos(plan free mux), Creada Con TRCP, Clerk, S3, Drizzle ORM, Mux, Next JS, Tailwind, Shadcn, AWS RDS Y S3.',
-    link: '/https://reelix-one.vercel.app/',
+    link: 'https://reelix-one.vercel.app/',
     github: '/https://github.com/niko1275/Reelix',
   },
     {
