@@ -4,7 +4,25 @@ import { Tabs, TabsList, TabsContent, TabsTrigger } from '@/components/ui/tabs';
 import ProjectCard from '@/components/ProjectCard';
 
 const projectData = [
-
+    {
+        image: '/work/Admin.png',
+        category: 'Next JS',
+        name: 'QuiscoCoffe Admin Dashboard',
+        description:
+          'Pagina Para la Administracion de tienda de productos de pasteria, Creado Con Next js, Shadcn, Prisma, typescript, Auth JS, S3, Tailwind, MercadoPago.',
+        link: 'https://quisco-coffe.vercel.app',
+        github: 'https://github.com/niko1275',
+      },
+       {
+        image: '/work/QuiscoCoffe.png',
+        category: 'Next JS',
+        name: 'QuiscoCoffe',
+        description:
+          'Pagina Para la venta De productos de pasteleria, Con panel de administracion, Creado Con Next js, Prisma, typescript, Auth JS, S3, Tailwind, MercadoPago.',
+        link: 'https://quisco-coffe.vercel.app',
+        github: 'https://github.com/niko1275',
+      },
+    
    {
     image: '/work/ReelixAPP.png',
     category: 'Next JS',
@@ -22,15 +40,7 @@ const projectData = [
       link:'https://dashboard-e.vercel.app/dashboard',
       github:'https://github.com/niko1275/dashboard-e',
     },
-    {
-        image: '/work/QuiscoCoffe.png',
-        category: 'Next JS',
-        name: 'QuiscoCoffe',
-        description:
-          'Pagina Para la venta De productos de pasteleria, Con panel de administracion, Creado Con Next js, typescript, Auth JS, S3, Tailwind, MercadoPago.',
-        link: 'https://quisco-coffe.vercel.app',
-        github: 'https://github.com/niko1275',
-      },
+   
       {
         image: '/work/socialapp.png',
         category: 'React JS',

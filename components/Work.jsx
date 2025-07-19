@@ -13,6 +13,25 @@ import ProjectCard from '@/components/ProjectCard';
 
 const projectData = [
 
+   {
+    image: '/work/QuiscoCoffe.png',
+    category: 'Next JS',
+    name: 'QuiscoCoffe',
+    description:
+      'Pagina Para la venta De productos de pasteleria, Creado Con Next js, typescript, Auth JS, S3, Tailwind, MercadoPago.',
+    link: 'https://quisco-coffe.vercel.app',
+    github: 'https://github.com/niko1275',
+  },
+  
+   {
+    image: '/work/Admin.png',
+    category: 'Next JS',
+    name: 'QuiscoCoffe Admin Dashboard',
+    description:
+      'Pagina Para Administracion de la pagina de pasteleria, Creado Con Next js, typescript, Auth JS, S3, Tailwind, MercadoPago.',
+    link: 'https://quisco-coffe.vercel.app/admin',
+    github: 'https://github.com/niko1275',
+  },
     {
     image: '/work/ReelixAPP.png',
     category: 'next js',
@@ -22,15 +41,7 @@ const projectData = [
     link: 'https://reelix-one.vercel.app/',
     github: '/https://github.com/niko1275/Reelix',
   },
-  {
-    image: '/work/QuiscoCoffe.png',
-    category: 'Next JS',
-    name: 'QuiscoCoffe',
-    description:
-      'Pagina Para la venta De productos de pasteleria, Con panel de administracion, Creado Con Next js, typescript, Auth JS, S3, Tailwind, MercadoPago.',
-    link: 'https://quisco-coffe.vercel.app',
-    github: 'https://github.com/niko1275',
-  },
+ 
   {
     image: '/work/socialapp.png',
     category: 'react js',
